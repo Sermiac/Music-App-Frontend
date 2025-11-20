@@ -1,0 +1,94 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  margin: 0;
+  padding: 0;
+}
+
+.product-title{
+  color: #ffffff;
+}
+
+.header{
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 0.5rem;
+  padding: 0;
+}
+
+.header-card{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 10;
+  background-color: #1f1f1f;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.app {
+  margin-top: 100px;
+  text-align: center;
+  padding: 0rem;
+
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  width: 100%;
+  color: #ffffff;
+}
+
+.card {
+  background-color: #1f1f1f;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.price {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.description {
+  color: #fffff;
+  margin-top: 0.5rem;
+}
+
+.title{
+  font-size: 1rem;
+}
+
+.title-card{
+  cursor: default;
+  transition: none;
+}
+
+.title-card:hover {
+  transform: none;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
