@@ -1,10 +1,11 @@
 import React from "react";
 
-export const PrimerComponente = () => {
+export const PrimerComponente = ({texto}) => {
 	return (
 		<div>
 			<h1>Hola</h1>
-			<p>Primer Componente</p>
+			<p>{texto}</p>
+			<hr/>
 		</div>
 	)
 }

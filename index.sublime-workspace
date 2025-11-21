@@ -1,0 +1,576 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"movie",
+				"MovieCard"
+			],
+			[
+				"onc",
+				"onClick?"
+			],
+			[
+				"div",
+				"HTMLDivElement"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"fle",
+				"flex-start"
+			],
+			[
+				"li",
+				"liquidez_despues"
+			],
+			[
+				"liq",
+				"liquidez_despues"
+			],
+			[
+				"ins",
+				"insumos_despues"
+			],
+			[
+				"insu",
+				"insumos_despues"
+			],
+			[
+				"al",
+				"align-items"
+			],
+			[
+				"a",
+				"align-items"
+			],
+			[
+				"alig",
+				"align-items"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"f",
+				"font-size"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"inl",
+				"inline-table"
+			],
+			[
+				"inli",
+				"inline-flex"
+			],
+			[
+				"fi",
+				"fit-content"
+			],
+			[
+				"lin",
+				"inline-grid"
+			],
+			[
+				"top",
+				"margin-top"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"car",
+				"card-container"
+			],
+			[
+				"le",
+				"flex"
+			],
+			[
+				"spa",
+				"space-evenly"
+			],
+			[
+				"las",
+				"last_message_sent"
+			],
+			[
+				"gray",
+				"darkgray"
+			],
+			[
+				"wh",
+				"whitesmoke"
+			],
+			[
+				"white",
+				"floralwhite"
+			],
+			[
+				"wite",
+				"whitesmoke"
+			],
+			[
+				"last",
+				"last_message_sent"
+			],
+			[
+				"shee",
+				"sheet2_url"
+			],
+			[
+				"item",
+				"item_id"
+			],
+			[
+				"nuemr",
+				"numeros"
+			],
+			[
+				"apel",
+				"apellido"
+			],
+			[
+				"c",
+				"countWords"
+			],
+			[
+				"rever",
+				"reversedPalabra"
+			],
+			[
+				"reve",
+				"reversedPalabra"
+			],
+			[
+				"re",
+				"reversedPalabra"
+			],
+			[
+				"t",
+				"twoSum"
+			],
+			[
+				"inpu",
+				"input"
+			],
+			[
+				"grou",
+				"groupB"
+			],
+			[
+				"gr",
+				"groupB"
+			],
+			[
+				"gro",
+				"groupB"
+			],
+			[
+				"group",
+				"groupB"
+			],
+			[
+				"g",
+				"groupS"
+			],
+			[
+				"grp",
+				"groupB"
+			],
+			[
+				"new",
+				"newT"
+			],
+			[
+				"F",
+				"File"
+			],
+			[
+				"Fla",
+				"FLATHUB"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"inpt",
+				"input"
+			],
+			[
+				"red",
+				"reduceBtn"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"lsp prefe",
+				"Preferences: LSP Settings"
+			],
+			[
+				"form",
+				"LSP: Format File"
+			],
+			[
+				"format",
+				"LSP: Format File"
+			],
+			[
+				"terminus",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"packacontrol in",
+				"Package Control: Install Package"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"open shell",
+				"Terminus: Open Default Shell in Tab (View)"
+			],
+			[
+				"terminus:op",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"package control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: ad",
+				"Package Control: Add Channel"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/media/miguel/SSD/Programming/Test/React/my-react-app/index.html",
+		"/home/miguel/.config/sublime-text/Packages/LSP/LSP.sublime-settings",
+		"/home/miguel/.config/sublime-text/Packages/User/LSP.sublime-settings",
+		"/media/miguel/SSD/Programming/Test/React/my-react-app/src/App.css",
+		"/media/miguel/SSD/Programming/Test/React/my-react-app/src/components/PrimerComponente.jsx",
+		"/media/miguel/SSD/Programming/Test/React/my-react-app/src/components/MovieCard.jsx",
+		"/media/miguel/SSD/Programming/Test/React/my-react-app/src/pages/Home.jsx",
+		"/media/miguel/SSD/Programming/Test/React/my-react-app/src/App.jsx",
+		"/media/miguel/SSD/Programming/Test/React/my-react-app/src/pages/Favorites.jsx",
+		"/media/miguel/SSD/Programming/Test/Python_learning/GroupAnagrams.py",
+		"/media/miguel/SSD/Programming/Test/React/my-react-app/src/components/Products.jsx",
+		"/media/miguel/SSD/Programming/Test/React/my-react-app/.gitignore",
+		"/media/miguel/SSD/Programming/Test/JavaScript/test.js",
+		"/media/miguel/SSD/Programming/Test/Python_learning/EncodeDecodeStr.py",
+		"/media/miguel/SSD/Programming/Test/Python_learning/Anagram.py",
+		"/home/miguel/Downloads/audiorelay/bin/audio_server.sh",
+		"/home/miguel/Downloads/dual_bluethoot.sh",
+		"/media/miguel/SSD/Programming/Test/Python_learning/TwoSum2 (copy).py",
+		"/media/miguel/SSD/Programming/Test/Python_learning/TopKFrequentElements.py",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR_BOT/2.0/Telegram_bot_GrafiCalamar/bot.py",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR_BOT/2.0/Telegram_bot_GrafiCalamar/Ejecutar.sh",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR_BOT/2.0/Ejecutar.sh",
+		"/media/miguel/SSD/Programming/Test/Java,css,HTML/Developer/Cart-app/styles/style.css",
+		"/home/miguel/Desktop/SmA/MoreGames/Keystores/Keygenerator.sh",
+		"/home/miguel/.local/share/applications/terminal-folder.desktop",
+		"/home/miguel/.local/share/applications/Juego-Lewd --Editor.cinnamon-generated.desktop",
+		"/home/miguel/.local/share/applications/Aseprite.desktop",
+		"/home/miguel/.local/share/applications/GIMP.desktop",
+		"/media/miguel/SSD/Programming/Test/Bash/Battery/AFKBatteryControl.sh",
+		"/media/miguel/SSD/Programming/Test/Bash/Battery/LaptopBattery.sh",
+		"/media/miguel/SSD/Programming/Test/Bash/test.sh",
+		"/media/miguel/SSD/Programming/Test/React/my-react-app/vite.config.js",
+		"/media/miguel/SSD/Programming/Test/React/my-react-app/package.json",
+		"/media/miguel/SSD/Programming/Test/WhatsApp/executePython.sh",
+		"/media/miguel/SSD/Programming/Test/WhatsApp/message.py",
+		"/etc/tlp.conf",
+		"/media/miguel/SSD/Programming/Test/WhatsApp/requirements.txt",
+		"/media/miguel/SSD/Programming/Test/Bash/Battery/test.sh",
+		"/media/miguel/SSD/Programming/Test/WhatsApp/venv.sh",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR_BOT/venv.sh",
+		"/media/miguel/SSD/Programming/Test/llm/manage_models.sh",
+		"/media/miguel/SSD/Programming/Test/React/App.css",
+		"/media/miguel/SSD/Programming/Test/Bash/Battery/nohup.out",
+		"/media/miguel/HDD/Escritorio/SmA/MoreGames/Choices-We-Make/README.md",
+		"/media/miguel/SSD/Programming/Projects/GitHubPages/Portfolio/Sermiac.github.io/style.css",
+		"/media/miguel/SSD/Programming/Projects/GitHubPages/Portfolio/Sermiac.github.io/index.html",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR_BOT/2.0/Telegram_bot/bot.py",
+		"/media/miguel/SSD/Programming/Projects/GitHubPages/Portfolio/test/style.css",
+		"/media/miguel/SSD/Programming/Projects/GitHubPages/Portfolio/test/index.html",
+		"/media/miguel/SSD/Programming/Test/WiFiMonitor/notes.sh",
+		"/media/miguel/SSD/Programming/Projects/GitHubPages/Portfolio/Sermiac.github.io/README.md",
+		"/media/miguel/HDD/Escritorio/SmA/MoreGames/Choices-We-Make/Assets/Story/Chapter_1/House_3.txt",
+		"/media/miguel/HDD/Escritorio/SmA/MoreGames/Choices-We-Make/Assets/Story/Chapter_1/House_2.txt",
+		"/media/miguel/HDD/Escritorio/SmA/MoreGames/Choices-We-Make/Assets/Story/Chapter_1/Bathroom_2.txt",
+		"/media/miguel/HDD/Escritorio/SmA/MoreGames/Choices-We-Make/Assets/Story/Chapter_1/House_1.txt",
+		"/media/miguel/HDD/Escritorio/SmA/MoreGames/Choices-We-Make/Assets/Story/Chapter_1/Bathroom_1.txt",
+		"/media/miguel/HDD/Escritorio/SmA/MoreGames/Choices-We-Make/.gitignore",
+		"/media/miguel/HDD/Escritorio/SmA/MoreGames/Choices-We-Make/Assets/Story/README.txt",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR_BOT/2.0/Telegram_bot/README.md",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR_BOT/2.0/Telegram_bot/config.env",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR_BOT/1.0/bot.py",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR_BOT/2.0/Telegram_bot/config.venv",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR_BOT/2.0/Telegram_bot_GrafiCalamar/.gitignore",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR_BOT/2.0/Telegram_bot_GrafiCalamar/config.env",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR_BOT/1.0/Ejecutar BACKUP.sh",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR_BOT/1.0/Ejecutar.sh",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR BOT/2.0/Ejecutar.sh",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR BOT/2.0/Telegram_bot_GrafiCalamar/.gitignore/config.env",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR BOT/2.0/Telegram_bot_GrafiCalamar/bot.py",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR BOT/1.0/bot.py",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR BOT/2.0/Telegram_bot_GrafiCalamar/.gitignore",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR BOT/1.0/Ejecutar.sh",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR BOT/1.0/BACKUP_bot.py",
+		"/media/miguel/SSD/Programming/Test/Python_learning/testDatabase2.py",
+		"/media/miguel/SSD/Programming/Test/Python_learning/TwoSum.py",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR BOT/1.0/Ejecutar BACKUP.sh",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR BOT/venv.sh",
+		"/media/miguel/SSD/Programming/Projects/GRAFICALAMAR BOT/1.0/Ejecutar.bat",
+		"/media/miguel/SSD/Programming/Test/WiFiMonitor/yasmin/masks.hcmask",
+		"/media/miguel/SSD/Programming/Test/SQL/MySQL/MySQL.sh",
+		"/media/miguel/SSD/Programming/Test/WiFiMonitor/SCRIPT.sh",
+		"/media/miguel/SSD/Programming/Test/WiFiMonitor/masks.hcmask",
+		"/media/miguel/SSD/Programming/Test/WiFiMonitor/key.hc22000",
+		"/media/miguel/SSD/Programming/Test/WiFiMonitor/andres-01.kismet.csv",
+		"/media/miguel/SSD/Programming/Test/WiFiMonitor/andres-01.csv",
+		"/media/miguel/SSD/Programming/Test/WiFiMonitor/andres-01.cap",
+		"/media/miguel/SSD/Programming/GRAFICALAMAR BOT/2.0/addDataBaseData.py",
+		"/media/miguel/SSD/Programming/GRAFICALAMAR BOT/2.0/testDatabase.py",
+		"/media/miguel/SSD/Programming/Test/Python_learning/executePython.sh",
+		"/mnt/HDD_Linux/Descargas/Install_flatpaks_2.0.sh",
+		"/media/miguel/SSD/Programming/GRAFICALAMAR BOT/2.0/testDatabase2.py",
+		"/media/miguel/SSD/Programming/GRAFICALAMAR BOT/2.0/testDatabase (copy).py",
+		"/media/miguel/SSD/Programming/Test/Bash/LaptopBattery.sh",
+		"/media/miguel/SSD/Programming/Test/Bash/AFKControl.sh",
+		"/media/miguel/SSD/Programming/Test/test.sh",
+		"/home/miguel/.local/share/godot/app_userdata/Choices We Make/savegame.json",
+		"/home/miguel/Desktop/SmA/Juego lewd/juego-lewd/Scripts/globals.gd",
+		"/media/miguel/SSD/Test/SQL/empresa.db",
+		"/media/miguel/SSD/Test/joderConIA/ejecutador_Low.sh",
+		"/media/miguel/SSD/Test/joderConIA/LLM_Low.py",
+		"/media/miguel/SSD/Test/Python_learning/executePython.sh",
+		"/media/miguel/SSD/Test/Python_learning/Anagram.py",
+		"/media/miguel/SSD/Test/Python_learning/Duplicate.py",
+		"/media/miguel/SSD/Developer/Cart-app/index.html",
+		"/media/miguel/SSD/Developer/Cart-app/js/main.js",
+		"/media/miguel/SSD/Developer/Cart-app/styles/style.css",
+		"/media/miguel/SSD/Test/Python_learning/TwoSum.py",
+		"/media/miguel/SSD/Test/Python_learning/practica.py",
+		"/media/miguel/SSD/Test/Python_learning/practica2.py",
+		"/media/miguel/SSD/Test/llm/LLM_Low.py",
+		"/media/miguel/SSD/Test/Python_learning/GroupAnagrams.py",
+		"/media/miguel/SSD/Test/test.sh",
+		"/media/miguel/SSD/Test/llm/ejecutador_Low.sh",
+		"/mnt/HDD_Linux/Recuperado/recup_dir.2/f8926744.ini",
+		"/mnt/HDD_Linux/Recuperado/recup_dir.4/f12285200.txt",
+		"/media/miguel/SSD/GRAFICALAMAR BOT/Render/bot.py",
+		"/media/miguel/SSD/Test/Python_learning/test.py",
+		"/media/miguel/SSD/Test/Python_learning/LeetCode.py",
+		"/media/miguel/SSD/Test/Python learning/Anagram.py",
+		"/media/miguel/SSD/Test/Python learning/LeetCode.py",
+		"/media/miguel/SSD/Test/Python learning/ejecutePython.sh",
+		"/media/miguel/HDD/Escritorio/SmA/More Games/Choices We Make/README.md",
+		"/home/miguel/Desktop/SmA/More Games/15-days-game/docs/design.md",
+		"/media/miguel/HDD/Escritorio/SmA/More Games/Choices-We-Make/README.md",
+		"/mnt/HDD_Linux/Descargas/Install_flatpaks2.sh",
+		"/media/miguel/SSD/GRAFICALAMAR BOT/1.0/bot.py",
+		"/etc/X11/xorg.conf.d/20-amdgpu.conf",
+		"/media/miguel/SSD/Test/llm/manage_models.sh"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"lsp_show_inlay_hints": false
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 211.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
