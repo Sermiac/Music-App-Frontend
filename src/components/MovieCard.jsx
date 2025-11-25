@@ -1,5 +1,6 @@
 import "../css/MovieCard.css";
 import { useMovieContext } from "../contexts/MovieContexts";
+import SpotifyLogo from "../assets/SpotifyLogo.png";
 
 function MovieCard({ movie }) {
   const { isFavorite, addToFavorites, removeFromFavorites } = useMovieContext();
@@ -31,9 +32,14 @@ function MovieCard({ movie }) {
               window.open(movie.track, "_blank");
             }}
           >
-            <h3>{movie.title}</h3>
-            <p>{movie.artist}</p>
-            <p>{movie.release_date?.split("-")[0]}</p>
+            <div className="movie-text">
+              <h3>{movie.title}</h3>
+              <p>{movie.artist}</p>
+              <p>{movie.release_date?.split("-")[0]}</p>
+            </div>
+            <div className="spotify-logo">
+              <img src={SpotifyLogo} alt="" />
+            </div>
           </button>
         </div>
       </div>

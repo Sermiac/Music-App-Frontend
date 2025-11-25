@@ -19,8 +19,8 @@ function Favorites() {
   } else {
     return (
       <div className="favorites-empty">
-        <h2>No Favorite Movies Yet</h2>
-        <p>Start adding movies to your favorities and they will appear here</p>
+        <h2>No Favorites</h2>
+        <p>Start adding tracks to your favorities!</p>
       </div>
     );
   }

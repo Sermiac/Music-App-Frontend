@@ -19,19 +19,10 @@ async function loadBackEnd(mode, search) {
   }
 }
 
-async function getTopTracks(mode, search) {
-  if (mode == "topTracks") {
-    return (await loadBackEnd(mode)).albums.items;
-  }
-  if (mode == "searchTracks") {
-    return (await loadBackEnd(mode, search)).albums.items;
-  }
-}
-
 export async function fetchTracks() {
-  const data = await getTopTracks("topTracks");
-  return data.map((album, index) => ({
-    id: index + 1,
+  const data = await loadBackEnd("topTracks");
+  return data.map((album) => ({
+    id: album.id,
     title: album.name,
     url: album.images[0]?.url,
     release_date: album.release_date,
@@ -41,9 +32,9 @@ export async function fetchTracks() {
 }
 
 export async function searchTracks(search) {
-  const data = await getTopTracks("searchTracks", search);
-  return data.map((album, index) => ({
-    id: index + 1,
+  const data = await loadBackEnd("searchTracks", search);
+  return data.map((album) => ({
+    id: album.id,
     title: album.name,
     url: album.images[0]?.url,
     release_date: album.release_date,

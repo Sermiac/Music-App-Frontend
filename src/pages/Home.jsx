@@ -1,23 +1,15 @@
 import MovieCard from "../components/MovieCard";
-import { useState, useEffect, use } from "react";
+import { useState, useEffect } from "react";
 import "../css/Home.css";
 import { fetchTracks, searchTracks } from "../services/api.js";
 import { useMovieContext } from "../contexts/MovieContexts";
+import { SearchForm } from "../components/SearchForm.jsx";
 
 function Home() {
-  /*este de abajo puedo eliminarlo y usar query como principal*/
-  const [searchQuery, setSearchQuery] = useState("");
+  const { query, setQuery } = useMovieContext();
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
-
-  const { query, setQuery } = useMovieContext();
-
-  /* Este si quiero dejar la busqueda guardada en contexto
-  useEffect(() => {
-    if (query) setSearchQuery(query);
-  }, []);
-  */
 
   useEffect(() => {
     const loadPopularMovies = async () => {
@@ -32,19 +24,19 @@ function Home() {
       }
     };
 
-    if (searchQuery.trim() === "") {
+    if (query.trim() === "") {
       loadPopularMovies();
     }
-  }, [searchQuery]);
+  }, [query]);
 
-  const handleSearch = async (e) => {
-    e.preventDefault();
-    if (!searchQuery.trim()) return;
+  async function handleSearch(text) {
+    setQuery(text);
+    if (!text.trim()) return;
     if (loading) return;
 
     setLoading(true);
     try {
-      const searchResults = await searchTracks(searchQuery);
+      const searchResults = await searchTracks(text);
       setMovies(searchResults);
       setError(null);
     } catch (err) {
@@ -53,26 +45,11 @@ function Home() {
     } finally {
       setLoading(false);
     }
-  };
+  }
 
   return (
     <div className="home">
-      <form onSubmit={handleSearch} className="search-form">
-        <input
-          type="text"
-          placeholder="Search for tracks in Spotify..."
-          className="search-input"
-          value={searchQuery}
-          onChange={(e) => {
-            setSearchQuery(e.target.value);
-            setQuery(e.target.value);
-          }}
-        />
-        <button type="submit" className="search-button">
-          Search
-        </button>
-      </form>
-
+      <SearchForm onSearch={handleSearch} />
       {error && <div className="error-message">{error}</div>}
 
       {loading ? (
