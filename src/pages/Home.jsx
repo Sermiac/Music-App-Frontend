@@ -1,19 +1,58 @@
 import MovieCard from "../components/MovieCard";
-import { useState } from "react";
+import { useState, useEffect, use } from "react";
 import "../css/Home.css";
+import { fetchTracks, searchTracks } from "../services/api.js";
+import { useMovieContext } from "../contexts/MovieContexts";
 
 function Home() {
+  /*este de abajo puedo eliminarlo y usar query como principal*/
   const [searchQuery, setSearchQuery] = useState("");
+  const [movies, setMovies] = useState([]);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  const movies = [
-    { id: 1, title: "John Wick", release_date: "2020" },
-    { id: 2, title: "Terminator", release_date: "1985" },
-    { id: 3, title: "Matrix", release_date: "1998" },
-  ];
+  const { query, setQuery } = useMovieContext();
 
-  const handleSearch = (e) => {
+  /* Este si quiero dejar la busqueda guardada en contexto
+  useEffect(() => {
+    if (query) setSearchQuery(query);
+  }, []);
+  */
+
+  useEffect(() => {
+    const loadPopularMovies = async () => {
+      try {
+        const popularMovies = await fetchTracks();
+        setMovies(popularMovies);
+      } catch (err) {
+        console.log(err);
+        setError("Failed to load popular tracks...");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    if (searchQuery.trim() === "") {
+      loadPopularMovies();
+    }
+  }, [searchQuery]);
+
+  const handleSearch = async (e) => {
     e.preventDefault();
-    alert(searchQuery);
+    if (!searchQuery.trim()) return;
+    if (loading) return;
+
+    setLoading(true);
+    try {
+      const searchResults = await searchTracks(searchQuery);
+      setMovies(searchResults);
+      setError(null);
+    } catch (err) {
+      console.log(err);
+      setError("Failed to search...");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -21,21 +60,30 @@ function Home() {
       <form onSubmit={handleSearch} className="search-form">
         <input
           type="text"
-          placeholder="Search for movies..."
+          placeholder="Search for tracks in Spotify..."
           className="search-input"
           value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
+          onChange={(e) => {
+            setSearchQuery(e.target.value);
+            setQuery(e.target.value);
+          }}
         />
         <button type="submit" className="search-button">
           Search
         </button>
       </form>
 
-      <div className="movies-grid">
-        {movies.map((movie) => (
-          <MovieCard movie={movie} key={movie.id} />
-        ))}
-      </div>
+      {error && <div className="error-message">{error}</div>}
+
+      {loading ? (
+        <div className="loading">Loading...</div>
+      ) : (
+        <div className="movies-grid">
+          {movies.map((movie) => (
+            <MovieCard movie={movie} key={movie.id} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

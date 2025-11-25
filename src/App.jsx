@@ -1,15 +1,15 @@
 // App.jsx
 import "./css/App.css";
-import { PrimerComponente } from "./components/PrimerComponente.jsx"; /* Otra forma de importar (solo prueba) */
 import MovieCard from "./components/MovieCard.jsx";
 import Home from "./pages/Home.jsx";
 import Favorites from "./pages/Favorites.jsx";
 import { Routes, Route } from "react-router-dom";
+import { MovieProvider } from "./contexts/MovieContexts.jsx";
 import NavBar from "./components/NavBar.jsx";
 
 function App() {
   return (
-    <div>
+    <MovieProvider>
       <NavBar />
       <main className="main-content">
         <Routes>
@@ -17,7 +17,7 @@ function App() {
           <Route path="/favorites" element={<Favorites />} />
         </Routes>
       </main>
-    </div>
+    </MovieProvider>
   );
 }
 
