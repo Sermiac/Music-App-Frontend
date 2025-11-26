@@ -1,16 +1,120 @@
-# React + Vite
+# **Music App – Frontend**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple music discovery web app built with **React** and **Vite**, powered by the **Spotify Web API**.
+Users can browse new releases and search for tracks with album artwork and artist information.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Deployed Website URL**
 
-## React Compiler
+https://music-app-miguel.netlify.app/
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
 
-## Expanding the ESLint configuration
+## **Backend repo**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> https://github.com/Sermiac/Music-App-Backend
+
+## **Features**
+
+- Browse the latest music releases.
+- Search tracks by name.
+- View track details including:
+  - Track title
+  - Artist
+  - Album name
+  - Album cover
+
+- Fully responsive design.
+- Connects to a custom FastAPI backend hosted on Render.
+
+
+## **Tech Stack**
+
+### **Frontend**
+
+- React (Vite)
+- Axios / Fetch API
+- CSS / Tailwind (if applicable)
+
+### **Backend**
+
+- FastAPI (Python)
+- Uvicorn
+- Spotify Web API (Client Credentials Flow)
+
+### **Deployment**
+
+- Frontend deployed on **Netlify**
+- Backend deployed on **Render**
+
+
+## **Project Setup**
+
+### **1. Install dependencies**
+
+```
+npm install
+```
+
+### **2. Start development server**
+
+```
+npm run dev
+```
+
+The app will run at:
+
+```
+http://localhost:5173/
+```
+
+
+## **Environment Variables**
+
+Create a `.env` file in the project root:
+
+```
+VITE_BACKEND_URL=http://localhost:8000
+```
+
+
+## **Build for production**
+
+```
+npm run build
+```
+
+This generates the production-ready files in the `dist/` folder.
+
+
+## **Deployment**
+
+The app can be deployed to any static hosting provider.
+
+
+## **API Endpoints (from backend)**
+
+### **Get new releases**
+
+```
+GET /backend/new-releases
+```
+
+### **Search tracks**
+
+```
+GET /backend/search-tracks?search=<query>
+```
+
+Returns a normalized list of tracks with:
+
+- id
+- name
+- artist
+- album
+- album cover image
+
+
+## **License**
+
+This project is for educational and personal use.
+
