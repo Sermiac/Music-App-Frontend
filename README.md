@@ -116,5 +116,5 @@ Returns a normalized list of tracks with:
 
 ## **License**
 
-This project is for educational and personal use.
+This project uses GNU license.
 
