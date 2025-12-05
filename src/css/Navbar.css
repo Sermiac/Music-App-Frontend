@@ -22,6 +22,9 @@
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background-color 0.2s;
+
+  display: flex;
+  align-items: center;
 }
 
 .nav-link:hover {
@@ -32,6 +35,12 @@
   max-width: 40px;
   max-height: 40px;
   border-radius: 20px;
+  outline: 3px solid green;
+}
+
+.user-name {
+  margin-inline: 10px;
+  color: grey;
 }
 
 @media (max-width: 768px) {

@@ -1,13 +1,9 @@
 const api_url = import.meta.env.VITE_API_URL;
 
 async function loadBackEnd(mode, search) {
-  let globalTopTracks = null;
-  let searchTracks = null;
-  let loginData = null;
-
   if (mode == "topTracks") {
     const res = await fetch(`${api_url}/backend/new-releases`);
-    globalTopTracks = await res.json();
+    let globalTopTracks = await res.json();
     return globalTopTracks;
   }
 
@@ -15,14 +11,20 @@ async function loadBackEnd(mode, search) {
     const res = await fetch(
       `${api_url}/backend/search-tracks?search=${search}`,
     );
-    searchTracks = await res.json();
+    let searchTracks = await res.json();
     return searchTracks;
   }
 
   if (mode == "basicLogin") {
     const res = await fetch(`${api_url}/backend/basic-login`);
-    loginData = await res.json();
+    let loginData = await res.json();
     return loginData;
+  }
+
+  if (mode == "userTop") {
+    const res = await fetch(`${api_url}/backend/user-top-tracks`);
+    let userTop = await res.json();
+    return userTop;
   }
 }
 
@@ -57,4 +59,16 @@ export async function redirectLogin() {
 export async function basicLogin() {
   const data = await loadBackEnd("basicLogin");
   return data;
+}
+
+export async function fetchUserTopTracks() {
+  const data = await loadBackEnd("userTop");
+  return data.items.map((item) => ({
+    id: item.id,
+    title: item.name,
+    url: item.album.images[0]?.url,
+    release_date: item.album.release_date,
+    artist: item.album.artists[0]?.name,
+    track: item.album.external_urls?.spotify,
+  }));
 }

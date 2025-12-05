@@ -6,6 +6,7 @@ export const useMovieContext = () => useContext(MovieContext);
 export const MovieProvider = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
   const [query, setQuery] = useState("");
+  const [userLists, setUserLists] = useState([]);
 
   useEffect(() => {
     const storedFavs = localStorage.getItem("favorites");
@@ -20,12 +21,22 @@ export const MovieProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
+    const storedUser = localStorage.getItem("userLists");
+
+    if (storedUser) setUserLists(JSON.parse(storedUser));
+  }, []);
+
+  useEffect(() => {
     localStorage.setItem(`favorites`, JSON.stringify(favorites));
   }, [favorites]);
 
   useEffect(() => {
     localStorage.setItem(`query`, query);
   }, [query]);
+
+  useEffect(() => {
+    localStorage.setItem(`userLists`, JSON.stringify(userLists));
+  }, [userLists]);
 
   const addToFavorites = (movie) => {
     setFavorites((prev) => [...prev, movie]);
@@ -46,6 +57,8 @@ export const MovieProvider = ({ children }) => {
     isFavorite,
     query,
     setQuery,
+    userLists,
+    setUserLists,
   };
 
   return (

@@ -35,7 +35,10 @@ function NavBar() {
           Favorites
         </Link>
         {userData ? (
-          <img className="user-icon" src={userData} alt="" />
+          <Link to="/profile" className="nav-link">
+            <img className="user-icon" src={userData.images[1].url} alt="" />
+            <p className="user-name">{userData.display_name}</p>
+          </Link>
         ) : (
           <button onClick={Login} className="nav-link">
             login
