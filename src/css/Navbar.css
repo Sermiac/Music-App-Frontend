@@ -28,6 +28,12 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.user-icon {
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 20px;
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem;

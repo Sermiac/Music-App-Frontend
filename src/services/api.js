@@ -3,6 +3,7 @@ const api_url = import.meta.env.VITE_API_URL;
 async function loadBackEnd(mode, search) {
   let globalTopTracks = null;
   let searchTracks = null;
+  let loginData = null;
 
   if (mode == "topTracks") {
     const res = await fetch(`${api_url}/backend/new-releases`);
@@ -16,6 +17,12 @@ async function loadBackEnd(mode, search) {
     );
     searchTracks = await res.json();
     return searchTracks;
+  }
+
+  if (mode == "basicLogin") {
+    const res = await fetch(`${api_url}/backend/basic-login`);
+    loginData = await res.json();
+    return loginData;
   }
 }
 
@@ -41,4 +48,13 @@ export async function searchTracks(search) {
     artist: album.artists[0]?.name,
     track: album.external_urls?.spotify,
   }));
+}
+
+export async function redirectLogin() {
+  window.location.href = `${api_url}/backend/login`;
+}
+
+export async function basicLogin() {
+  const data = await loadBackEnd("basicLogin");
+  return data;
 }
