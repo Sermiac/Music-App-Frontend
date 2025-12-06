@@ -10,6 +10,10 @@ function Home() {
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
+  const user_id = document.cookie
+    .split("; ")
+    .find((row) => row.startsWith("user_id="))
+    ?.split("=")[1];
 
   useEffect(() => {
     const loadPopularMovies = async () => {

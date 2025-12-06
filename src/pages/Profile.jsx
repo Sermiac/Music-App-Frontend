@@ -9,11 +9,15 @@ function Profile() {
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
+  const user_id = document.cookie
+    .split("; ")
+    .find((row) => row.startsWith("user_id="))
+    ?.split("=")[1];
 
   useEffect(() => {
     const loadPopularMovies = async () => {
       try {
-        const popularMovies = await fetchUserTopTracks();
+        const popularMovies = await fetchUserTopTracks(user_id);
         setMovies(popularMovies);
       } catch (err) {
         console.log(err);

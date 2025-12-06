@@ -1,6 +1,6 @@
 const api_url = import.meta.env.VITE_API_URL;
 
-async function loadBackEnd(mode, search) {
+async function loadBackEnd(mode, search, user_id) {
   if (mode == "topTracks") {
     const res = await fetch(`${api_url}/backend/new-releases`);
     let globalTopTracks = await res.json();
@@ -16,13 +16,20 @@ async function loadBackEnd(mode, search) {
   }
 
   if (mode == "basicLogin") {
-    const res = await fetch(`${api_url}/backend/basic-login`);
+    const res = await fetch(
+      `${api_url}/backend/basic-login?user_id=${user_id}`,
+      {
+        credentials: "include",
+      },
+    );
     let loginData = await res.json();
     return loginData;
   }
 
   if (mode == "userTop") {
-    const res = await fetch(`${api_url}/backend/user-top-tracks`);
+    const res = await fetch(
+      `${api_url}/backend/user-top-tracks?user_id=${user_id}`,
+    );
     let userTop = await res.json();
     return userTop;
   }
@@ -56,13 +63,13 @@ export async function redirectLogin() {
   window.location.href = `${api_url}/backend/login`;
 }
 
-export async function basicLogin() {
-  const data = await loadBackEnd("basicLogin");
+export async function basicLogin(user_id) {
+  const data = await loadBackEnd("basicLogin", null, user_id);
   return data;
 }
 
-export async function fetchUserTopTracks() {
-  const data = await loadBackEnd("userTop");
+export async function fetchUserTopTracks(user_id) {
+  const data = await loadBackEnd("userTop", null, user_id);
   return data.items.map((item) => ({
     id: item.id,
     title: item.name,
